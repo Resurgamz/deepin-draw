@@ -206,7 +206,7 @@ void TopTilte::initMenu()
             auto page = drawApp->drawBoard()->currentPage();
             if (page != nullptr && page->context() != nullptr)
                 manager.showPrintDialog(page->context()->renderToImage(Qt::white), drawApp->topMainWindowWidget(),
-                                        page->name());
+                                         page->name());
         });
     } else {
         qDebug() << "Adding tablet-specific menu items";
